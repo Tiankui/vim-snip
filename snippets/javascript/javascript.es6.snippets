@@ -1,0 +1,42 @@
+snippet i
+	import ${0} from '${1}'
+snippet iwb
+	import ${0:name} from '{${1:module}}'
+snippet cla
+	class ${0} {
+		${1}
+
+	}
+snippet clax
+	class ${1} extends ${2} {
+		${0}
+	}
+snippet af
+	(${0}) => {
+		${1}
+	}
+snippet a
+	(${1}) => ${0}
+snippet sym
+	const ${0} = Symbol('${1}')
+snippet ed
+	export default ${0}
+snippet e
+	export ${0}
+snippet c
+	constructor() {
+		super(...arguments)
+		$0
+	}
+
+snippet c
+	constructor(props) {
+		super(props)
+		$0
+	}
+
+snippet forof
+	for ( let ${1:item} of ${2:item} ) {
+		${3}
+	}
+	$0

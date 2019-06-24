@@ -1,0 +1,673 @@
+priority -50
+
+snippet . "selector { }"
+$1 {
+	$0
+}
+endsnippet
+
+snippet p "padding"
+padding: ${1:0};$0
+endsnippet
+
+snippet bd "border"
+border: ${1:0};$0
+endsnippet
+
+snippet d "display"
+display: ${1:none};$0
+endsnippet
+
+snippet bg "background"
+background: ${1:none};$0
+endsnippet
+
+snippet ff "font-family"
+font-family: ${1:"Helvetica Neue", Helvetica, Arial, sans-serif};$0
+endsnippet
+
+snippet h "height"
+height: ${1:auto};$0
+endsnippet
+
+snippet w "width"
+width: ${1:auto};$0
+endsnippet
+
+snippet tt "text-transform"
+text-transform: ${1:none};$0
+endsnippet
+
+snippet ! "!important CSS (!)"
+!important
+endsnippet
+
+snippet tsh "text-shadow: color-hex x y blur (text)"
+text-shadow: ${1:${2:color} ${3:offset-x} ${4:offset-y} ${5:blur}};$0
+endsnippet
+
+snippet bxsh "box-shadow: color-hex x y blur (text)"
+box-shadow: ${1:${2:offset-x} ${3:offset-y} ${4:blur} ${5:spread} ${6:color}};$0
+endsnippet
+
+#
+# Colors
+#
+
+snippet rgb "color rgb"
+rgb(${1:255}, ${2:255}, ${3:255})$0
+endsnippet
+
+snippet rgba "color rgba"
+rgba(${1:255}, ${2:255}, ${3:255}, ${4:0.5})$0
+endsnippet
+
+snippet hsl "color hsl"
+hsl(${1:360}, ${2:100}%, ${3:100}%)$0
+endsnippet
+
+snippet hsla "color hsla"
+hsla(${1:360}, ${2:100}%, ${3:100}%, ${4:0.5})$0
+endsnippet
+
+#
+# Selectors
+#
+
+snippet :fc
+:first-child
+endsnippet
+
+snippet :lc
+:last-child
+endsnippet
+
+snippet :nc
+:nth-child($0)
+endsnippet
+
+snippet :nlc
+:nth-last-child($0)
+endsnippet
+
+snippet :oc
+:only-child
+endsnippet
+
+#
+# Pseudo-elements
+#
+
+snippet :a
+:after
+endsnippet
+
+snippet :b
+:before
+endsnippet
+
+snippet ::a
+::after
+endsnippet
+
+snippet ::b
+::before
+endsnippet
+
+###########################################################################
+#                    Most of these came from TextMate                     #
+###########################################################################
+
+snippet bga "background-attachment: scroll:fixed (background)"
+background-attachment: ${1:scroll/fixed};$0
+endsnippet
+
+snippet bgc "background-color:  color-hex (background)"
+background-color: #${1:DDD};$0
+endsnippet
+
+snippet bgcr "background-color:  color-rgb (background)"
+background-color: rgb(${1:255},${2:255},${3:255});$0
+endsnippet
+
+snippet bgct "background-color:  transparent (background)"
+background-color: transparent;$0
+endsnippet
+
+snippet bgi "background-image:  none (background)"
+background-image: url($0);
+endsnippet
+
+snippet bgp "background-position:  position (background)"
+background-position: ${1:top left/top center/top right/center left/center center/center right/bottom left/bottom center/bottom right/x-% y-%/x-pos y-pos};$0
+endsnippet
+
+snippet bgr "background-repeat:  r:r-x:r-y:n-r (background)"
+background-repeat: ${1:repeat/repeat-x/repeat-y/no-repeat};$0
+endsnippet
+
+snippet background "background:  color image repeat attachment position (background)"
+background:${6: #${1:DDD}} url($2) ${3:repeat/repeat-x/repeat-y/no-repeat} ${4:scroll/fixed} ${5:top left/top center/top right/center left/center center/center right/bottom left/bottom center/bottom right/x-% y-%/x-pos y-pos};$0
+endsnippet
+
+snippet border "border-bottom-color: size style color (border)"
+border-bottom-color: #${1:999};$0
+endsnippet
+
+snippet border "border-bottom-style: size style color (border)"
+border-bottom-style: ${1:none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset};$0
+endsnippet
+
+snippet border "border-bottom-width: size style color (border)"
+border-bottom-width: ${1:1}px ${2:solid} #${3:999};$0
+endsnippet
+
+snippet border "border-bottom: size style color (border)"
+border-bottom: ${1:1}px ${2:solid} #${3:999};$0
+endsnippet
+
+snippet border "border-color: color (border)"
+border-color: ${1:999};$0
+endsnippet
+
+snippet border "border-left-color: color (border)"
+border-right-color: #${1:999};$0
+endsnippet
+
+snippet border "border-left-style: style (border)"
+border-left-style: ${1:none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset};$0
+endsnippet
+
+snippet border "border-left-width: size (border)"
+border-left-width: ${1:1}px
+endsnippet
+
+snippet border "border-left: size style color (border)"
+border-left: ${1:1}px ${2:solid} #${3:999};$0
+endsnippet
+
+snippet border "border-right-color: color (border)"
+border-right-color: #${1:999};$0
+endsnippet
+
+snippet border "border-right-style: style (border)"
+border-right-style: ${1:none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset};$0
+endsnippet
+
+snippet border "border-right-width: size (border)"
+border-right-width: ${1:1}px
+endsnippet
+
+snippet border "border-right: size style color (border)"
+border-right: ${1:1}px ${2:solid} #${3:999};$0
+endsnippet
+
+snippet border "border-style: style (border)"
+border-style: ${1:none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset};$0
+endsnippet
+
+snippet border "border-top-color: color (border)"
+border-top-color: #${1:999};$0
+endsnippet
+
+snippet border "border-top-style: style (border)"
+border-top-style: ${1:none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset};$0
+endsnippet
+
+snippet border "border-top-width: size (border)"
+border-top-width: ${1:1}px
+endsnippet
+
+snippet border "border-top: size style color (border)"
+border-top: ${1:1}px ${2:solid} #${3:999};$0
+endsnippet
+
+snippet border "border-width: width (border)"
+border-width: ${1:1px};$0
+endsnippet
+
+snippet b "border:   size style color (border)"
+border: ${1:1px} ${2:solid} #${3:999};$0
+endsnippet
+
+snippet clear "clear: value (clear)"
+clear: ${1:left/right/both/none};$0
+endsnippet
+
+snippet c "color:  color-hex (color)"
+color: #${1:DDD};$0
+endsnippet
+
+snippet cur "cursor: type (cursor)"
+cursor: $0;
+endsnippet
+
+snippet cursor "cursor: url (cursor)"
+cursor: url($1);$0
+endsnippet
+
+snippet direction "direction: ltr|rtl (direction)"
+direction: ${1:ltr|rtl};$0
+endsnippet
+
+snippet db "display: block (display)"
+display: block;$0
+endsnippet
+
+snippet dn "display: block (display)"
+display: none;$0
+endsnippet
+
+
+snippet display "display: common-types (display)"
+display: ${1:none/inline/block/list-item/run-in/compact/marker};$0
+endsnippet
+
+snippet di "display: inline (display)"
+display: inline;$0
+endsnippet
+
+snippet dib "display: inline (display)"
+display: inline-block;$0
+endsnippet
+
+snippet dt "display: table-types (display)"
+display: ${1:table/inline-table/table-row-group/table-header-group/table-footer-group/table-row/table-column-group/table-column/table-cell/table-caption};$0
+endsnippet
+
+snippet fll "float: left:right:none (float)"
+float: left;$0
+endsnippet
+snippet flr "float: left:right:none (float)"
+float: right;$0
+endsnippet
+snippet fln "float: left:right:none (float)"
+float: none;$0
+endsnippet
+
+snippet f "font-family:   family (font)"
+font-family: ${1:Arial, "MS Trebuchet"}, ${2:sans-}serif;$0
+endsnippet
+
+snippet fs "font-size: size (font)"
+font-size: ${1:100%};$0
+endsnippet
+
+snippet fst "font-style:   normal:italic:oblique (font)"
+font-style: ${1:normal/italic/oblique};$0
+endsnippet
+
+snippet font "font-variant:   normal:small-caps (font)"
+font-variant: ${1:normal/small-caps};$0
+endsnippet
+
+snippet fw "font-weight: weight (font)"
+font-weight: ${1:normal/bold};$0
+endsnippet
+
+snippet font "font:   style variant weight size:line-height font -family (font)"
+font: ${1:normal/italic/oblique} ${2:normal/small-caps} ${3:normal/bold} ${4:1em/1.5em} ${5:Arial}, ${6:sans-}serif;$0
+endsnippet
+
+snippet font "font: size font (font)"
+font: ${1:75%} ${2:"Lucida Grande", "Trebuchet MS", Verdana,} ${3:sans-}serif;$0
+endsnippet
+
+snippet letter "letter-spacing:   length-em (letter)"
+letter-spacing: $1em;$0
+endsnippet
+
+snippet letter "letter-spacing:   length-px (letter)"
+letter-spacing: $1px;$0
+endsnippet
+
+snippet list "list-style-image: url (list)"
+list-style-image: url($1);$0
+endsnippet
+
+snippet list "list-style-position: pos (list)"
+list-style-position: ${1:inside/outside};$0
+endsnippet
+
+snippet list "list-style-type: asian (list)"
+list-style-type: ${1:cjk-ideographic/hiragana/katakana/hiragana-iroha/katakana-iroha};$0
+endsnippet
+
+snippet list "list-style-type: marker(list)"
+list-style-type: ${1:none/disc/circle/square};$0
+endsnippet
+
+snippet list "list-style-type: numeric (list)"
+list-style-type: ${1:decimal/decimal-leading-zero/zero};$0
+endsnippet
+
+snippet list "list-style-type: other (list)"
+list-style-type: ${1:hebrew/armenian/georgian};$0
+endsnippet
+
+snippet list "list-style-type: roman-alpha-greek (list)"
+list-style-type: ${1:lower-roman/upper-roman/lower-alpha/upper-alpha/lower-greek/lower-latin/upper-latin};$0
+endsnippet
+
+snippet list "list-style: type position image (list)"
+list-style: ${1:none/disc/circle/square/decimal/zero} ${2:inside/outside} url($3);$0
+endsnippet
+
+snippet mb "margin-bottom: length (margin)"
+margin-bottom: ${1:20px};$0
+endsnippet
+
+snippet ml "margin-left: length (margin)"
+margin-left: ${1:20px};$0
+endsnippet
+
+snippet mr "margin-right: length (margin)"
+margin-right: ${1:20px};$0
+endsnippet
+
+snippet mt "margin-top: length (margin)"
+margin-top: ${1:20px};$0
+endsnippet
+
+snippet m "margin:   all (margin)"
+margin: ${1:20px};$0
+endsnippet
+
+snippet margin "margin: T R B L (margin)"
+margin: ${1:20px} ${2:0px} ${3:40px} ${4:0px};$0
+endsnippet
+
+snippet margin "margin: V H (margin)"
+margin: ${1:20px} ${2:0px};$0
+endsnippet
+
+snippet marker "marker-offset: auto (marker)"
+marker-offset: auto;$0
+endsnippet
+
+snippet marker "marker-offset: length (marker)"
+marker-offset: ${1:10px};$0
+endsnippet
+
+snippet overflow "overflow: type (overflow)"
+overflow: ${1:visible/hidden/scroll/auto};$0
+endsnippet
+
+snippet pb "padding-bottom: length (margin)"
+padding-bottom: ${1:20px};$0
+endsnippet
+
+snippet pl "padding-left: length (margin)"
+padding-left: ${1:20px};$0
+endsnippet
+
+snippet pr "padding-right: length (margin)"
+padding-right: ${1:20px};$0
+endsnippet
+
+snippet pt "padding-top: length (margin)"
+padding-top: ${1:20px};$0
+endsnippet
+
+snippet po "position: type (position)"
+position: ${1:static/relative/absolute/fixed};$0
+endsnippet
+
+snippet poa "position: type (position)"
+position: absolute;$0
+endsnippet
+
+snippet por "position: type (position)"
+position: relative;$0
+endsnippet
+
+snippet pos "position: type (position)"
+position: static;$0
+endsnippet
+
+snippet pof "position: type (position)"
+position: fixed;$0
+endsnippet
+
+snippet oh
+overflow: hidden;
+endsnippet
+
+snippet oa
+overflow: auto;
+endsnippet
+
+snippet oay
+overflow-y: auto;
+endsnippet
+
+snippet oax
+overflow-x: auto;
+endsnippet
+
+snippet ol
+outline: ${1:1px} ${2:solid} #${0:000};
+endsnippet
+
+snippet minh
+min-height: ${0};
+endsnippet
+
+snippet minw
+min-width: ${0};
+endsnippet
+
+snippet lst
+list-style: none;
+endsnippet
+
+snippet ts
+text-shadow: ${1:0} ${2:0} ${3:0} #${0:000};
+endsnippet
+
+snippet bs
+box-shadow: ${1:0} ${2:0} ${3:0} #${0:000};
+endsnippet
+
+snippet br
+border-radius: $0;
+endsnippet
+
+snippet a
+border-radius: $0;
+endsnippet
+
+snippet trans
+webkit-transition: ${0: .5s};
+transition: ${0: .5s};
+endsnippet
+
+snippet @k
+@keyframes {1: keyframeName } {
+	0% { transform: none; }
+	50% { transform: scale(1.4); }
+	100% { transform: none; }
+}
+endsnippet
+
+snippet ani
+animation: ${1:keyframe} .5s infinite;
+endsnippet
+
+snippet { "properties { } ( } )"
+{
+	/* $1 */
+	$0
+
+endsnippet
+
+snippet scrollbar "scrollbar"
+scrollbar-base-color:       ${1:#CCCCCC};${2:
+scrollbar-arrow-color:      ${3:#000000};
+scrollbar-track-color:      ${4:#999999};
+scrollbar-3dlight-color:    ${5:#EEEEEE};
+scrollbar-highlight-color:  ${6:#FFFFFF};
+scrollbar-face-color:       ${7:#CCCCCC};
+scrollbar-shadow-color:     ${9:#999999};
+scrollbar-darkshadow-color: ${8:#666666};}
+endsnippet
+
+snippet selection "selection"
+$1::-moz-selection,
+$1::selection {
+	color: ${2:inherit};
+	background: ${3:inherit};
+}
+endsnippet
+
+snippet ta "text-align: left:center:right (txt)"
+text-align: ${1:left/right/center/justify};$0
+endsnippet
+
+snippet tac "text-align: left:center:right (txt)"
+text-align: center;$0
+endsnippet
+
+snippet td "text-decoration: none:underline:overline:line-through:blink (text)"
+text-decoration: ${1:none/underline/overline/line-through/blink};$0
+endsnippet
+
+snippet tdn "text-decoration: none:underline:overline:line-through:blink (text)"
+text-decoration: none;$0
+endsnippet
+
+snippet text "text-indent: length (text)"
+text-indent: ${1:10}px;$0
+endsnippet
+
+snippet text "text-transform: capitalize:upper:lower (text)"
+text-transform: ${1:capitalize/uppercase/lowercase};$0
+endsnippet
+
+snippet va "vertical-align: type (vertical)"
+vertical-align: ${1:baseline/sub/super/top/text-top/middle/bottom/text-bottom/length/%};$0
+endsnippet
+
+snippet vi "visibility: type (visibility)"
+visibility: ${1:visible/hidden/collapse};$0
+endsnippet
+
+snippet white "white-space:  normal:pre:nowrap (white)"
+white-space: ${1:normal/pre/nowrap};$0
+endsnippet
+
+snippet wnr "white-space:  nowrap"
+white-space: nowrap;$0
+endsnippet
+
+snippet word "word-spacing:  length (word)"
+word-spacing: ${1:10px};$0
+endsnippet
+
+snippet z "z-index: index (z)"
+z-index: $1;$0
+endsnippet
+
+# flex
+snippet df
+display: flex;
+endsnippet
+
+snippet jc
+justify-content: $0;
+endsnippet
+
+snippet fd
+flex-direction: $0;
+endsnippet
+
+snippet fdr
+flex-direction: row;
+endsnippet
+
+snippet fdc
+flex-direction: column;
+endsnippet
+
+snippet fw
+flex-wrap: $0;
+endsnippet
+
+snippet fg
+flex-grow: $0;
+endsnippet
+
+snippet fww
+flex-wrap: warp;
+endsnippet
+
+snippet ali
+align-items: $0;
+endsnippet
+
+snippet als
+align-self: $0;
+endsnippet
+
+snippet bc
+border-color: #$0;
+endsnippet
+
+# end-flex
+
+snippet bb
+border-bottom: 1px solid #$0;
+endsnippet
+
+snippet lh
+line-height: $0;
+endsnippet
+
+snippet bgs
+background-size: $0;
+endsnippet
+
+# precss
+snippet @de
+@define-extend $1 {
+	$0
+}
+endsnippet
+
+snippet @e
+@extend &0;
+endsnippet
+
+snippet @for
+@for $i from 1 to 3 {
+	.b-$i {
+		width: $(i)px;
+	}
+}
+endsnippet
+
+snippet @if
+.notice--clear {
+	@if 3 < 5 {
+		background: green;
+	}
+	@else {
+		background: blue;
+	}
+}
+endsnippet
+
+snippet tar
+text-align: right;
+endsnippet
+
+snippet bsz
+box-sizing: border-box;
+endsnippet
+
+snippet as
+align-self: ${0:flex-start};
+endsnippet
+
+
+# vim:ft=snippets:

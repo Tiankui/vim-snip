@@ -1,0 +1,94 @@
+# Snippets for react and redux
+
+# React methods
+snippet rr
+	render () {
+		return $0
+	}
+# React class and extend
+snippet ec
+	class ${1:Component} extends Component {
+		render () {
+			return $0
+		}
+	}
+snippet ep
+	class ${1:Component} extends PureComponent {
+		render () {
+			return $0
+		}
+	}
+
+snippet pc
+	const ${1:PureComponent} = props => ($0)
+# React modules import
+snippet ir
+	import React from 'react'
+snippet irc
+	import React, { Component } from 'react'
+snippet irpc
+	import React, { PureComponent } from 'react'
+snippet irender
+	import { render } from 'react-dom'
+snippet irdc
+	import { connect } from 'react-redux'
+snippet irdp
+	import { Provider } from 'react-redux'
+# Props and State
+snippet ss
+	this.setState(Object.assign({}, this.state, {$0}))
+snippet tp
+	this.props
+snippet lp
+	let { $0 } = this.props
+snippet cp
+	const { $0 } = this.props
+# Jsx snippets
+snippet void
+	javascript:void(0)
+snippet t
+	<$1 />$0
+# React life cycle
+snippet scu
+	shouldComponentUpdate (nextProps, nextState) {
+		$1
+		return $0
+	}
+snippet cwrp
+	componentWillReceiveProps (nextProps) {
+		$0
+	}
+snippet cwm
+	componentWillMount () {
+		$0
+	}
+snippet cdm
+	componentDidMount () {
+		$0
+	}
+snippet cwu
+	componentWillUpdate (nextProps, nextState) {
+		$0
+	}
+snippet cwum
+	componentWillUnmount () {
+		$0
+	}
+snippet cdu
+	componentDidUpdate (prevProps, preState) {
+		$0
+	}
+snippet pt
+	static propTypes = {
+		title: React.PropTypes.string.isRequired,
+		price: React.PropTypes.number.isRequired,
+		initialQty: React.PropTypes.number
+	}
+# form
+snippet hic
+	handleInputChange(event) {
+		const target = event.target
+				, value = target.type === 'checkbox' ? target.checked : target.value
+				, name = target.name
+		this.setState({[name]: value})
+	}
