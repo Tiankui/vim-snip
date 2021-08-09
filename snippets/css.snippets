@@ -1,79 +1,79 @@
-snippet .
-	${1} {
-		${0}
-	}
 snippet px
 	/*px*/
+
 snippet no
 	/*no*/
-snippet 
-snippet
+
+snippet br
 	border-radius: {$1}
+
 snippet !
-	 !important
+	!important
+
 snippet bdi:m+
 	-moz-border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${0:stretch};
+
 snippet bdi:m
 	-moz-border-image: ${0};
+
 snippet bdrz:m
 	-moz-border-radius: ${0};
+
 snippet bxsh:m+
 	-moz-box-shadow: ${1:0} ${2:0} ${3:0} #${0:000};
+
 snippet bxsh:m
 	-moz-box-shadow: ${0};
+
 snippet bdi:w+
 	-webkit-border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${0:stretch};
+
 snippet bdi:w
 	-webkit-border-image: ${0};
+
 snippet bdrz:w
 	-webkit-border-radius: ${0};
+
 snippet bxsh:w+
 	-webkit-box-shadow: ${1:0} ${2:0} ${3:0} #${0:000};
+
 snippet bxsh:w
 	-webkit-box-shadow: ${0};
+
 snippet @f
 	@font-face {
 		font-family: ${1};
 		src: url(${0});
 	}
+
 snippet @i
 	@import url(${0});
+
 snippet @m
 	@media ${1:print} {
 		${0}
 	}
+
 snippet bg+
 	background: #${1:FFF} url(${2}) ${3:0} ${4:0} ${0:no-repeat};
+
 snippet bga
 	background-attachment: ${0};
-snippet bga:f
-	background-attachment: fixed;
-snippet bga:s
-	background-attachment: scroll;
+
 snippet bgbk
 	background-break: ${0};
-snippet bgbk:bb
-	background-break: bounding-box;
-snippet bgbk:c
-	background-break: continuous;
-snippet bgbk:eb
-	background-break: each-box;
+
 snippet bgcp
 	background-clip: ${0};
-snippet bgcp:bb
-	background-clip: border-box;
-snippet bgcp:cb
-	background-clip: content-box;
-snippet bgcp:nc
-	background-clip: no-clip;
-snippet bgcp:pb
-	background-clip: padding-box;
+
 snippet bgc
 	background-color: #${0:FFF};
 snippet bgc:t
 	background-color: transparent;
+
 snippet bgi
 	background-image: url(${0});
+
 snippet bgi:n
 	background-image: none;
 snippet bgo

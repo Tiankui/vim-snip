@@ -2,19 +2,22 @@
 
 # (c) holds no legal value ;)
 snippet ///
-	/*
-	 * $1
+	/**
+	 * ${1: @param}
+	 * ${2: @return}
 	 */
 snippet Gin
-	/*
-	 * @author Gin [weipingzhou2@yirendai.com]
-	 */
+	/*---------------------------------------------------------------------------------------
+	 *  `g:snips_author` [ zhouweiping@aibank.com | `g:snips_email` ]
+	 *  Created by `strftime("%Y-%m-%d %H:%M")`
+	 *  Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${1:`g:snips_author`}. All Rights Reserved.
+	 *-------------------------------------------------------------------------------------*/
 snippet lastmod
-	last modified by `strftime("%Y-%m-%d %H:%M")`
+	Last modified by `strftime("%Y-%m-%d %H:%M")`
 snippet created
-	created by `strftime("%Y-%m-%d %H:%M")`
+	Created by `strftime("%Y-%m-%d %H:%M")`
 snippet c)
-	copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${1:`g:snips_author`}. All Rights Reserved.
+	Copyright `&enc[:2] == "utf" ? "©" : "(c)"` `strftime("%Y")` ${1:`g:snips_author`}. All Rights Reserved.
 snippet date
 	`strftime("%Y-%m-%d")`
 snippet ddate
